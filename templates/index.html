@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Recognition from Speech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+
+        .upload-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #4a90e2;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input[type="file"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        button {
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #007bff;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Emotion Recognition from Speech</h1>
+    <div class="upload-form">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".wav" required>
+            <button type="submit"><i class="fas fa-upload"></i> Upload and Predict</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Created with ❤️ by Chiedozie Chibueze Nnadozie</p>
+        <p><a href="https://www.linkedin.com/in/chiedozie-nnadozie-66729821a/">LinkedIn</a> | <a href="#">Email: Edomyke@gmail.com</a></p>
+    </div>
+</body>
+</html>
